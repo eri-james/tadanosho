@@ -89,11 +89,13 @@ button[type="button"] {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lightbox img {
   display: block;
-  margin: auto;
   max-width: 90%;
   max-height: 90%;
   animation: fadeIn 0.5s;

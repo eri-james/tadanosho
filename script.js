@@ -132,15 +132,18 @@ resetButton.addEventListener('click', function() {
 // Lightbox functionality
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = lightbox.querySelector('.lightboxImage');
-const close = lightbox.querySelector('.close');
+const closeLightbox = function() {
+  lightbox.style.display = 'none';
+};
 
 document.querySelectorAll('.raceImage').forEach(image => {
   image.addEventListener('click', function() {
     lightboxImage.src = this.src;
-    lightbox.style.display = 'block';
+    lightbox.style.display = 'flex';
   });
 });
 
-close.addEventListener('click', function() {
-  lightbox.style.display = 'none';
+lightbox.addEventListener('click', closeLightbox);
+lightboxImage.addEventListener('click', function(event) {
+  event.stopPropagation();
 });
