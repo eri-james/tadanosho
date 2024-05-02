@@ -121,6 +121,14 @@ form.addEventListener('submit', function(event) {
     });
 });
 
+// Handle form reset
+const resetButton = document.getElementById('resetButton');
+
+resetButton.addEventListener('click', function() {
+  form.reset();
+  resultsContainer.innerHTML = ''; // Clear the result table
+});
+
 // Lightbox functionality
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = lightbox.querySelector('.lightboxImage');
