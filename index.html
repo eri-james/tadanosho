@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tadano Sho Team Builder</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Tadano Sho Team Builder</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <form id="teamBuilderForm">
+          <section>
+            <h2>Trainer Info</h2>
+            <div class="form-group">
+              <label for="trainerName">Trainer Name:</label>
+              <input type="text" id="trainerName" name="trainerName" required>
+            </div>
+            <div class="form-group">
+              <label for="rank">Rank:</label>
+              <select id="rank" name="rank" required>
+                <option value="">Select Rank</option>
+                <option value="G">G</option>
+                <option value="F">F</option>
+                <option value="E">E</option>
+                <option value="D">D</option>
+                <option value="C">C</option>
+                <option value="B">B</option>
+                <option value="A">A</option>
+                <option value="S">S</option>
+                <option value="SS">SS</option>
+                <option value="UG">UG</option>
+                <option value="UF">UF</option>
+                <option value="UE">UE</option>
+              </select>
+            </div>
+            <div id="gradeContainer" style="display: none;">
+              <div class="form-group">
+                <label for="grade">Grade:</label>
+                <select id="grade" name="grade">
+                  <option value="">Select Grade</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>SHORT - Sprinters Stakes (NAK 1200m) (R)</h2>
+            <div class="race-image-container">
+              <img src="https://cdn.discordapp.com/attachments/770941894922207262/1235542796652384266/Sprinters_Stakes.png?ex=6634c065&is=66336ee5&hm=4f77bf3114eca6d6aaf093e5f19f148ff39ccaa247615d9a7f33e12e58b1b5bd&" alt="Sprinters Stakes" class="raceImage">
+            </div>
+            <div class="form-group">
+              <label for="shortUma1">Uma #1:</label>
+              <select id="shortUma1" name="shortUma1" required></select>
+            </div>
+            <div class="form-group">
+              <label for="shortUma2">Uma #2:</label>
+              <select id="shortUma2" name="shortUma2" required></select>
+            </div>
+          </section>
+          <section>
+            <h2>MILE - Victoria Mile (TOK 1600m) (L)</h2>
+            <div class="race-image-container">
+              <img src="https://cdn.discordapp.com/attachments/770941894922207262/1235542797109559326/Victoria_Mile.png?ex=6634c066&is=66336ee6&hm=6260c97360c536c51927b0f3f2841ba993917cc8937603f214e4ad0b44ebaca1&" alt="Victoria Mile" class="raceImage">
+            </div>
+            <div class="form-group">
+              <label for="mileUma1">Uma #1:</label>
+              <select id="mileUma1" name="mileUma1" required></select>
+            </div>
+            <div class="form-group">
+              <label for="mileUma2">Uma #2:</label>
+              <select id="mileUma2" name="mileUma2" required></select>
+            </div>
+          </section>
+          <section>
+            <h2>MEDIUM - Prix de l'Arc de Triomphe (LON 2400m) (R)</h2>
+            <div class="race-image-container">
+              <img src="https://cdn.discordapp.com/attachments/770941894922207262/1235542797466210376/Prix_de_lArc_de_Triomphe.png?ex=6634c066&is=66336ee6&hm=6fda753db69c96694d5b00b1b9834ea76818f235ade6f01c315cae58b2e80717&" alt="Prix de l'Arc de Triomphe" class="raceImage">
+            </div>
+            <div class="form-group">
+              <label for="mediumUma1">Uma #1:</label>
+              <select id="mediumUma1" name="mediumUma1" required></select>
+            </div>
+            <div class="form-group">
+              <label for="mediumUma2">Uma #2:</label>
+              <select id="mediumUma2" name="mediumUma2" required></select>
+            </div>
+          </section>
+          <section>
+            <h2>LONG - Tenno Sho Spring (KYO 3200m) (R)</h2>
+            <div class="race-image-container">
+              <img src="https://cdn.discordapp.com/attachments/770941894922207262/1235542797810012160/Tenno_Sho_Spring.png?ex=6634c066&is=66336ee6&hm=0f097b671a94d4e62cb1df6d0c7f28c40f78297d3b67f19c028e328f26854e9c&" alt="Tenno Sho Spring" class="raceImage">
+            </div>
+            <div class="form-group">
+              <label for="longUma1">Uma #1:</label>
+              <select id="longUma1" name="longUma1" required></select>
+            </div>
+            <div class="form-group">
+              <label for="longUma2">Uma #2:</label>
+              <select id="longUma2" name="longUma2" required></select>
+            </div>
+          </section>
+          <section>
+            <h2>DIRT - February Stakes (TOK 1600m) (L)</h2>
+            <div class="race-image-container">
+              <img src="https://cdn.discordapp.com/attachments/770941894922207262/1235542798103609364/February_Stakes.png?ex=6634c066&is=66336ee6&hm=9a7a7ca0e377113fc65f2679ba51b46f88086588026a716f39534a24862600f1&" alt="February Stakes" class="raceImage">
+            </div>
+            <div class="form-group">
+              <label for="dirtUma1">Uma #1:</label>
+              <select id="dirtUma1" name="dirtUma1" required></select>
+            </div>
+            <div class="form-group">
+              <label for="dirtUma2">Uma #2:</label>
+              <select id="dirtUma2" name="dirtUma2" required></select>
+            </div>
+          </section>
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightboxImage">
+    </div>
+    <div id="resultsContainer" class="row justify-content-center"></div>
+    <div id="loadingOverlay" class="loading-overlay">
+      <div class="loading-text">Loading...</div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
